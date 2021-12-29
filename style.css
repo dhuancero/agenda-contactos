@@ -1,0 +1,83 @@
+*,::after,*::before{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+  background-color: rgba(25, 25, 25, .8);
+  color: white;
+}
+
+.content {
+  height: 100vh;
+  width: 70vh;
+  margin: 2rem auto;
+}
+
+header h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom:2rem;
+  font-size: 2.3rem;
+}
+
+.form-data {
+  display: block;
+  width: 100%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  /* border: solid 1px; */
+}
+
+.form-data input {
+ background: none;
+ line-height: 3rem;
+ margin: 1rem 0rem;
+ outline: 0;
+ border: 0;
+ color: white;
+ border-bottom: 1px solid dodgerblue;
+
+}
+
+.form-data input:active {
+  border-bottom: 1px solid dodgerblue;
+}
+
+.form-data input:focus {
+  border-bottom: 1px solid dodgerblue;
+}
+
+.form-data button {
+  margin: 1rem 0rem;
+  background-color: dodgerblue;
+  border: 0;
+  outline: 0;
+  height: 3rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: white;
+  cursor:pointer;
+ }
+
+ .list-contacts {
+   display:flex;
+   flex-direction: column;
+ }
+
+.contact {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 4rem;
+}
+.icon {
+  color: tomato;
+  cursor: pointer;
+}

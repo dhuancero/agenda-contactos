@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+
+  <!--Materia Icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Estilo de css-->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>Agenda de Contactos</title>
+</head>
+
+<body>
+  <main class="content">
+    <header>
+      <h1>Agenda de Contactos</h1>
+    </header>
+
+    <div>
+      <form class="form-data">
+        <input type="text" required class="nombre" placeholder="Introduce nombre">
+        <input type="" required class="numero" placeholder="Introduce número">
+        <input type="text" required class="direccion" placeholder="Introduce dirección">
+        <button type="submit" class="btn btn-add-contacts">
+          Agregar Contactos
+        </button>
+      </form>
+      <div class="message">
+        <!-- * aquí va un mensaje -->
+      </div>
+      <!-- ? Litado de Contactos -->
+      <div class="list-contacts">
+      </div>
+    </div>
+  </main>
+  <script src="js/functions.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

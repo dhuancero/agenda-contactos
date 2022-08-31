@@ -17,31 +17,51 @@
   <!--Estilo de css-->
   <link rel="stylesheet" href="./css/style.css">
 
+  <!-- BOOTSWATCH -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
   <title>Agenda de Contactos</title>
 </head>
 
 <body>
-  <main class="content">
-    <header>
-      <h1>Agenda de Contactos</h1>
-    </header>
+  <header class="container text-center my-3 text-info">
+    <h1>Agenda de Contactos</h1>
+  </header>
 
-    <div>
-      <form class="form-data">
-        <input type="text" required class="nombre" placeholder="Introduce nombre">
-        <input type="" required class="numero" placeholder="Introduce número">
-        <input type="text" required class="direccion" placeholder="Introduce dirección">
-        <button type="submit" class="btn btn-add-contacts">
-          Agregar Contactos
-        </button>
-      </form>
+  <main class="container d-flex justify-content-center  align-items-lg-start">
+    <section class="col-md-4 mx-3 ">
       <div class="message">
         <!-- * aquí va un mensaje -->
       </div>
-      <!-- ? Litado de Contactos -->
-      <div class="list-contacts">
-      </div>
-    </div>
+      <form class="form-data">
+        <div class="mb-3">
+          <label for="name" class="form-label text-danger fw-bold fs-5 ">NOMBRE</label>
+          <input type="text" required class="form-control nombre" name="name" id="name" aria-describedby="helpId"
+            placeholder="Introduce tu nombre...">
+          <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+        </div>
+        <div class="mb-3">
+          <label for="number" class="form-label  text-danger fw-bold fs-5 ">TELÉFONO</label>
+          <input type="number" required class="numero form-control " name="number" id="number" aria-describedby="helpId"
+            placeholder="Introduce número de teléfono...">
+          <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+        </div>
+
+        <div class="mb-3">
+          <label for="direction" class="form-label  text-danger fw-bold fs-5">DIRECCIÓN:</label>
+          <input type="text" required class="direccion form-control " name="direction" id="direction"
+            aria-describedby="helpId" placeholder="Introduce dirección...">
+          <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+        </div>
+
+        <button type="button" class="btn btn-add-contacts btn-danger ">AGRAGAR CONTACTO</button>
+      </form>
+
+    </section>
+    <section class="list-contacts col-md-7 mx-3 px-2">
+      <!-- ? Listado de Contactos -->
+    </section>
   </main>
   <script src="js/functions.js"></script>
   <script src="js/main.js"></script>
